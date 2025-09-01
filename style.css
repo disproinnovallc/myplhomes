@@ -168,41 +168,6 @@ body {
     margin: 0 auto;
 }
 
-/* Responsive navigation for mobile */
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.menu-toggle span {
-    height: 3px;
-    width: 25px;
-    background: var(--text-light);
-    margin: 4px 0;
-    border-radius: 2px;
-}
-
-@media (max-width: 768px) {
-    .navbar .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: var(--primary-color);
-        padding-left: 0;
-    }
-    .navbar .nav-links.active {
-        display: flex;
-    }
-    .menu-toggle {
-        display: flex;
-    }
-    .navbar .nav-links li {
-        margin: 10px 0;
-        text-align: center;
-    }
-}
-
 .about-section h2,
 .story-section h2,
 .how-section h2 {
