@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | PL Homes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="PL Homes Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="casas.html">Casas</a></li>
+                <li><a href="housing-laboral.html">Housing laboral</a></li>
+                <li><a href="ubicaciones.html">Ubicaciones</a></li>
+                <li><a href="comunidades.html">Comunidades</a></li>
+                <li><a href="financiamiento.html">Financiamiento</a></li>
+                <li><a href="ofertas.html">Ofertas</a></li>
+                <li><a href="liquidacion.html">Liquidación</a></li>
+                <li><a href="testimonios.html">Testimonios</a></li>
+                <li><a href="porque.html">Por qué PL Homes</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero section -->
+    <section class="hero">
+        <div class="hero-overlay">
+            <h1>Contacto</h1>
+            <p>Estamos aquí para ayudarte. Envíanos un mensaje y nos pondremos en contacto contigo pronto.</p>
+        </div>
+    </section>
+
+    <!-- Contact form section -->
+    <section class="contact-section">
+        <h2>Envíanos un mensaje</h2>
+        <form class="contact-form" onsubmit="return false;">
+            <div class="form-group">
+                <label for="fname">Nombre</label>
+                <input type="text" id="fname" required />
+            </div>
+            <div class="form-group">
+                <label for="lname">Apellido</label>
+                <input type="text" id="lname" required />
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" required />
+            </div>
+            <div class="form-group">
+                <label for="phone">Teléfono</label>
+                <input type="tel" id="phone" />
+            </div>
+            <div class="form-group full-width">
+                <label for="message">Mensaje</label>
+                <textarea id="message" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Enviar</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 PL Homes. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
