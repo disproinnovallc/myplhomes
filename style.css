@@ -1,0 +1,296 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Root variables */
+:root {
+    --primary-color: #e66800; /* orange base color */
+    --primary-color-dark: #c35500; /* darker shade for hover */
+    --text-light: #fff;
+    --text-dark: #333;
+    --background-light: #f5f5f5;
+    --background-dark: #111;
+}
+
+/* Navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar .logo {
+    /* Reduce margin and align the logo container; text styles removed because we use an image */
+    display: flex;
+    align-items: center;
+}
+
+/* Logo image size within the navbar */
+.navbar .logo img {
+    height: 40px;
+    width: auto;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar .nav-links li a {
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .nav-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Hero section */
+.hero {
+    height: 70vh;
+    background: url('hero.jpg') center center/cover no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 8px;
+    max-width: 80%;
+}
+
+.hero-overlay h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.hero-overlay p {
+    font-size: 1.2rem;
+}
+
+/* Search section */
+.search-section {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.search-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.search-form input,
+.search-form select {
+    padding: 10px;
+    flex: 1;
+    min-width: 160px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+    background-color: var(--primary-color-dark);
+}
+
+/* CTA section */
+.cta-section {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.cta-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.cta-section p {
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #fff;
+    color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #f5f5f5;
+}
+
+/* About, Story and How sections */
+.about-section,
+.story-section,
+.how-section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-section h2,
+.story-section h2,
+.how-section h2 {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.about-section p,
+.story-section p,
+.how-section p {
+    margin-bottom: 15px;
+}
+
+.btn-secondary {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-color-dark);
+}
+
+.how-section ul {
+    margin-left: 20px;
+    list-style: disc;
+    margin-bottom: 15px;
+}
+
+.how-section ul li {
+    margin-bottom: 8px;
+}
+
+/* Contact section */
+.contact-section {
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+}
+
+.contact-section h2 {
+    /* Use the primary orange color instead of the previous red */
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-group {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full-width {
+    flex-basis: 100%;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    /* Match the contact button to the site’s primary color palette */
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    /* Darken the button on hover */
+    background-color: var(--primary-color-dark);
+}
+
+/* Footer */
+.footer {
+    background-color: #111;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-overlay h1 {
+        font-size: 1.6rem;
+    }
+    .navbar .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .search-form {
+        flex-direction: column;
+    }
+    .contact-form {
+        flex-direction: column;
+    }
+}
