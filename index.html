@@ -41,34 +41,34 @@
 
     <!-- Search/filter section -->
     <section class="search-section">
-        <form class="search-form" onsubmit="return false;">
-            <input type="text" placeholder="Ciudad, Estado o Código postal" />
-            <select>
-                <option selected disabled>Tipo de casa</option>
-                <option>Casas nuevas</option>
-                <option>Casas usadas</option>
-                <option>Casas en liquidación</option>
-                <option>Listas para mudarse</option>
+        <form class="search-form">
+            <input type="text" name="location" placeholder="Ciudad, Estado o Código postal" />
+            <select name="type">
+                <option value="" selected disabled>Tipo de casa</option>
+                <option value="nuevas">Casas nuevas</option>
+                <option value="usadas">Casas usadas</option>
+                <option value="liquidacion">Casas en liquidación</option>
+                <option value="listas">Listas para mudarse</option>
             </select>
-            <select>
-                <option selected disabled>Metros cuadrados</option>
-                <option>0‑75 m²</option>
-                <option>75‑93 m²</option>
-                <option>93‑140 m²</option>
-                <option>140+ m²</option>
+            <select name="area">
+                <option value="" selected disabled>Metros cuadrados</option>
+                <option value="0-75">0‑75 m²</option>
+                <option value="75-93">75‑93 m²</option>
+                <option value="93-140">93‑140 m²</option>
+                <option value="140+">140+ m²</option>
             </select>
-            <select>
-                <option selected disabled>Dormitorios</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4+</option>
+            <select name="bedrooms">
+                <option value="" selected disabled>Dormitorios</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4+">4+</option>
             </select>
-            <select>
-                <option selected disabled>Baños</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3+</option>
+            <select name="bathrooms">
+                <option value="" selected disabled>Baños</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3+">3+</option>
             </select>
             <button type="submit">Buscar</button>
         </form>
