@@ -10,10 +10,17 @@
     <!-- Navbar -->
     <header>
         <nav class="navbar">
+            <!-- Logo isotipo cropped version -->
             <div class="logo">
-                <img src="logo.png" alt="PL Homes Logo">
+                <img src="logo-icon.png" alt="PL Homes Logo">
             </div>
-            <div class="menu-toggle"><span></span><span></span><span></span></div>
+            <!-- Hamburger menu icon -->
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- Navigation links -->
             <ul class="nav-links">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="casas.html">Casas</a></li>
@@ -26,13 +33,15 @@
                 <li><a href="testimonios.html">Testimonios</a></li>
                 <li><a href="porque.html">Por qué PL Homes</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+                <!-- Link to English version if available -->
+                <!-- <li><a href="contact_en.html">English</a></li> -->
             </ul>
         </nav>
     </header>
 
-    <!-- Hero section -->
-    <section class="hero">
+    <!-- Hero section with contact-themed background -->
+    <section class="hero" style="background-image: url('images/contact-hero.png'); background-size: cover; background-position: center;">
         <div class="hero-overlay">
             <h1>Contacto</h1>
             <p>Estamos aquí para ayudarte. Envíanos un mensaje y nos pondremos en contacto contigo pronto.</p>
@@ -42,31 +51,27 @@
     <!-- Contact form section -->
     <section class="contact-section">
         <h2>Envíanos un mensaje</h2>
-        <form class="contact-form" action="https://formsubmit.co/disproinnovallc@gmail.com" method="POST">
+        <form class="contact-form" onsubmit="return false;">
             <div class="form-group">
                 <label for="fname">Nombre</label>
-                <input type="text" id="fname" name="nombre" required />
+                <input type="text" id="fname" required />
             </div>
             <div class="form-group">
                 <label for="lname">Apellido</label>
-                <input type="text" id="lname" name="apellido" required />
+                <input type="text" id="lname" required />
             </div>
             <div class="form-group">
                 <label for="email">Correo electrónico</label>
-                <input type="email" id="email" name="correo" required />
+                <input type="email" id="email" required />
             </div>
             <div class="form-group">
                 <label for="phone">Teléfono</label>
-                <input type="tel" id="phone" name="telefono" />
+                <input type="tel" id="phone" />
             </div>
             <div class="form-group full-width">
                 <label for="message">Mensaje</label>
-                <textarea id="message" name="mensaje" rows="4"></textarea>
+                <textarea id="message" rows="4"></textarea>
             </div>
-            <!-- Hidden fields for formsubmit.co -->
-            <input type="hidden" name="_subject" value="Nuevo mensaje desde PL Homes">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="thankyou.html">
             <button type="submit" class="btn-primary">Enviar</button>
         </form>
     </section>
@@ -74,6 +79,7 @@
     <footer class="footer">
         <p>&copy; 2025 PL Homes. Todos los derechos reservados.</p>
     </footer>
+    <!-- Load the navigation toggle script -->
     <script src="script.js"></script>
 </body>
 </html>
