@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "darlington",
+    "name": "The Darlington",
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1577,
+    "type": "Double-wide",
+    "price": 159000,
+    "image": "img/models/darlington.jpg"
+  },
+  {
+    "slug": "saint",
+    "name": "The Saint",
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1577,
+    "type": "Double-wide",
+    "price": 159900,
+    "image": "img/models/saint.jpg"
+  },
+  {
+    "slug": "redbud",
+    "name": "The Redbud",
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1577,
+    "type": "Double-wide",
+    "price": 159900,
+    "image": "img/models/redbud.jpg"
+  },
+  {
+    "slug": "creole",
+    "name": "The Creole",
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1200,
+    "type": "Double-wide",
+    "price": 154900,
+    "image": "img/models/creole.jpg"
+  },
+  {
+    "slug": "pelican",
+    "name": "The Pelican",
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1568,
+    "type": "Double-wide",
+    "price": 159900,
+    "image": "img/models/pelican.jpg"
+  },
+  {
+    "slug": "olivia",
+    "name": "The Olivia",
+    "beds": 3,
+    "baths": 3,
+    "sqft": 2560,
+    "type": "Triple-wide",
+    "price": 0,
+    "image": "img/models/olivia.jpg"
+  }
+]
