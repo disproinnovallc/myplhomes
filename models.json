@@ -1,0 +1,74 @@
+[
+  {
+    "slug": "darlington",
+    "name": "Darlington",
+    "description": "Descripción del modelo Darlington (placeholder)",
+    "category": "double-wide",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "squareFeet": 1600,
+    "price": 0,
+    "image": "img/models/darlington.jpg",
+    "floorplan": "img/models/darlington-floorplan.png"
+  },
+  {
+    "slug": "saint",
+    "name": "Saint",
+    "description": "Descripción del modelo Saint (placeholder)",
+    "category": "double-wide",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "squareFeet": 1700,
+    "price": 0,
+    "image": "img/models/saint.jpg",
+    "floorplan": "img/models/saint-floorplan.png"
+  },
+  {
+    "slug": "pelican",
+    "name": "Pelican",
+    "description": "Descripción del modelo Pelican (placeholder)",
+    "category": "double-wide",
+    "bedrooms": 4,
+    "bathrooms": 2,
+    "squareFeet": 1800,
+    "price": 0,
+    "image": "img/models/pelican.jpg",
+    "floorplan": "img/models/pelican-floorplan.png"
+  },
+  {
+    "slug": "redbud",
+    "name": "Redbud",
+    "description": "Descripción del modelo Redbud (placeholder)",
+    "category": "double-wide",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "squareFeet": 1500,
+    "price": 0,
+    "image": "img/models/redbud.jpg",
+    "floorplan": "img/models/redbud-floorplan.png"
+  },
+  {
+    "slug": "creole",
+    "name": "Creole",
+    "description": "Descripción del modelo Creole (placeholder)",
+    "category": "double-wide",
+    "bedrooms": 4,
+    "bathrooms": 2,
+    "squareFeet": 2000,
+    "price": 0,
+    "image": "img/models/creole.jpg",
+    "floorplan": "img/models/creole-floorplan.png"
+  },
+  {
+    "slug": "olivia",
+    "name": "Olivia",
+    "description": "Descripción del modelo Olivia (placeholder)",
+    "category": "double-wide",
+    "bedrooms": 4,
+    "bathrooms": 2,
+    "squareFeet": 1900,
+    "price": 0,
+    "image": "img/models/olivia.jpg",
+    "floorplan": "img/models/olivia-floorplan.png"
+  }
+]
