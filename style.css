@@ -440,5 +440,30 @@ header nav ul li a:hover {
     }
     header nav ul li {
         margin-bottom: 5px;
-    }
+   
+    
+/* Enhanced mobile nav menu appearance */
+@media (max-width: 768px) {
+  .navbar .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 60px 20px 20px;
+  }
+  .navbar .nav-links li {
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .navbar .nav-links li:last-child {
+    border-bottom: none;
+  }
+  .navbar .nav-links li a {
+    display: block;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 10px 0;
+    color: var(--text-light);
+  }
+}
+}
 }
